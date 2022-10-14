@@ -1,0 +1,115 @@
+.big {
+    .bg-color-cyan {
+        height: 191px;
+        background-color: $bg-cyan;
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 25px;
+            align-items: center;
+            height: 100%;
+        }
+    }
+        
+    .bg-img-footer {
+        height: 453px;
+        background-image: url('../images/footer-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .mid {
+            height: 100%;
+            .dc-logo-big {
+                flex-grow: 1;
+                flex-basis: 0;
+                justify-content: flex-start;
+                align-items: center;
+                display: flex;
+                background-image: url('../images/dc-logo-bg.png');
+                background-position: right;
+                background-repeat: no-repeat;
+                height: 100%;
+                .container-mid {
+                    flex-basis: 50%;
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    color: white;
+                    .col {
+                        li {
+                            color: #818080;
+                            padding: 5px 0;
+                            h3 {
+                                text-transform: uppercase;
+                                padding: 10px 0;
+                                color: white;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+                        
+            
+    .bg-color-grey {
+            height: 132px;
+            background-color: #505050;
+        .end {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            height: 100%;
+            font-size: 1.25rem;
+            .button {
+                border: 3px solid $bg-cyan;
+                text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+                padding: 15px;
+            }
+            .icons {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .text_follow {
+                    color: $bg-cyan;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+            
+        }
+    }
+
+}
+
+.head_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    .card_container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    figure {
+        flex-basis: 20%;
+        img {
+            width: 45px;
+        }
+    }
+    div {
+        flex-basis: 80%;
+        p {
+            color: white;
+        }
+    }
+   
+}

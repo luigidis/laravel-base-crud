@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, menu {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-smaller {
+  font-size: 0.9rem;
+}
+
+header.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 144px;
+}
+header.main-header .navbar-container {
+  display: flex;
+  gap: 10px;
+  color: #303030;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header.main-header .navbar-container .navbar-item {
+  position: relative;
+  cursor: pointer;
+}
+header.main-header .navbar-container .navbar-item:hover::after {
+  content: "";
+  width: 100%;
+  background-color: #0C7CEC;
+  position: absolute;
+  height: 5px;
+  bottom: -63px;
+  left: 0;
+  right: 0;
+}
+
+.big .bg-color-cyan {
+  height: 191px;
+  background-color: #0282F9;
+}
+.big .bg-color-cyan .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+  height: 100%;
+}
+.big .bg-img-footer {
+  height: 453px;
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big .bg-img-footer .mid {
+  height: 100%;
+}
+.big .bg-img-footer .mid .dc-logo-big {
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  background-image: url("../images/dc-logo-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.big .bg-img-footer .mid .dc-logo-big .container-mid {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+.big .bg-img-footer .mid .dc-logo-big .container-mid .col li {
+  color: #818080;
+  padding: 5px 0;
+}
+.big .bg-img-footer .mid .dc-logo-big .container-mid .col li h3 {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: white;
+}
+.big .bg-color-grey {
+  height: 132px;
+  background-color: #505050;
+}
+.big .bg-color-grey .end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+  font-size: 1.25rem;
+}
+.big .bg-color-grey .end .button {
+  border: 3px solid #0282F9;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+}
+.big .bg-color-grey .end .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.big .bg-color-grey .end .icons .text_follow {
+  color: #0282F9;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.head_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.head_container .card_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.head_container figure {
+  flex-basis: 20%;
+}
+.head_container figure img {
+  width: 45px;
+}
+.head_container div {
+  flex-basis: 80%;
+}
+.head_container div p {
+  color: white;
+}
+
+.jumbotron-container {
+  height: 440px;
+  background-image: url("../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.jumbotron-container .ps_absolute {
+  position: relative;
+  min-width: 200px;
+}
+.jumbotron-container .ps_absolute .button_absolute {
+  position: absolute;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  background-color: #0282F9;
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  transform: translate(0, -50%);
+}
+
+.bg-color-black {
+  height: 600px;
+  background-color: #1C1C1C;
+  padding-top: 50px;
+}
+.bg-color-black .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  padding: 10px;
+}
+.bg-color-black .container .card {
+  display: flex;
+  flex-direction: column;
+  max-width: 185px;
+}
+.bg-color-black .container .card img {
+  width: 100%;
+  aspect-ratio: 1;
+  flex-basis: 80%;
+}
+.bg-color-black .container .card h3 {
+  color: white;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 0.85rem;
+}

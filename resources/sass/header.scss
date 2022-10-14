@@ -1,0 +1,28 @@
+header.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    height: 144px;
+    .navbar-container {
+        display: flex;
+        gap: 10px;
+        color: #303030;
+        font-weight: bold;
+        text-transform: uppercase;
+        .navbar-item {
+            position: relative;
+            cursor: pointer;
+        }
+        .navbar-item:hover::after {
+            content: "";
+            width: 100%;
+            background-color: #0C7CEC;
+            position: absolute;
+            height: 5px;
+            bottom: -63px;
+            left: 0;
+            right: 0;
+        }
+    }
+}
