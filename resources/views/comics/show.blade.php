@@ -28,6 +28,17 @@
             <li>
                 Tipologia: {{ $comic->type }}
             </li>
+            <li>
+                <a href="{{ route('comics.edit', $comic)}}">Modifica fumetto</a>
+            </li>
+            <li>
+                <form action="{{ route('comics.destroy', $comic)}}" method="POST">
+                @csrf
+                @method('DELETE')
+
+                <input type="submit" value="Elimina">
+                </form>
+            </li>
         </ul>
     </div>
 </section>
