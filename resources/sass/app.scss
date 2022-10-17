@@ -65,4 +65,28 @@
             }
         }
     }
+
+    .container.create_title {
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container.create_form_container {
+        color: white;
+        display: flex;
+        .create_form {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            .input_container {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                min-height: 50px;
+            }
+        }
+    }
 }
+            

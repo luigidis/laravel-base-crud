@@ -31,6 +31,10 @@ a {
   font-size: 0.9rem;
 }
 
+.fg_100 {
+  min-width: 100%;
+}
+
 header.main-header {
   display: flex;
   justify-content: space-between;
@@ -215,4 +219,25 @@ header.main-header .navbar-container .navbar-item:hover::after {
   text-transform: uppercase;
   padding-top: 20px;
   font-size: 0.85rem;
+}
+.bg-color-black .container.create_title {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.bg-color-black .container.create_form_container {
+  color: white;
+  display: flex;
+}
+.bg-color-black .container.create_form_container .create_form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.bg-color-black .container.create_form_container .create_form .input_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 50px;
 }
